@@ -28,6 +28,7 @@
  * @license     http://www.apptha.com/LICENSE.txt
  *
  * */
+
 namespace Apptha\Marketplace\Model\System\Config;
 
 use Magento\Framework\Option\ArrayInterface;
@@ -35,19 +36,20 @@ use Magento\Framework\Option\ArrayInterface;
 /**
  * This class contains seller Status functions
  */
-class Status implements ArrayInterface {
-    const ENABLED = 1;
-    const DISABLED = 0;
-    
+class BusinessType implements ArrayInterface
+{
+
     /**
      * Function to get Options
-     * 
+     *
      * @return array
      */
-    public function toOptionArray() {
-        return [ 
-                static::ENABLED => __ ( 'Approved' ),
-                static::DISABLED => __ ( 'Disapproved' ) 
+    public function toOptionArray()
+    {
+        return [
+            'Private limited' => __('Private limited'),
+            'Sole Proprietorship' => __('Sole Proprietorship'),
+            'LLP' => __('Partnership(LLP)'),
         ];
     }
 }
