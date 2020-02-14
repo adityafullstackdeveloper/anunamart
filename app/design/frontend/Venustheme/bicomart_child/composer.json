@@ -1,0 +1,23 @@
+{
+    "name": "magento/theme-frontend-bicomart",
+    "description": "N/A",
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "php": "7.0.2|7.0.4|~7.0.6|~7.1.0",
+        "magento/theme-frontend-bicomart": "100.3.*",
+        "magento/framework": "102.0.*"
+    },
+    "type": "magento2-theme",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ]
+    },
+    "version": "100.3.0"
+}
